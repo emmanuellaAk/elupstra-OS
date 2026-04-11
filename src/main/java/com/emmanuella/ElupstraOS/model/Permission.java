@@ -1,16 +1,14 @@
 package com.emmanuella.ElupstraOS.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import jakarta.persistence.Id;
 import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 @Data
+@EqualsAndHashCode(callSuper = true)
 @Entity
 @Table(name = "permissions")
 public class Permission extends BaseEntity {
